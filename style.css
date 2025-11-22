@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h5 {
+  font-size: 1.5em;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+#turn {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.board {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.board a {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.board a[id] {
+  display: inline-block;
+  min-width: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.board a[id]:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
