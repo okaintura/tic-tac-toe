@@ -58,6 +58,6 @@ function resetGame() {
   document.getElementById('turn').textContent = currentPlayer;
   
   for (let i = 0; i < 9; i++) {
-    document.getElementById(i).textContent = '_';
+    document.getElementById(i).textContent = '';
   }
 }
