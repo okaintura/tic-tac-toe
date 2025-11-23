@@ -10,6 +10,7 @@ class NoCacheHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 PORT = 5000
 Handler = NoCacheHTTPRequestHandler
 
+socketserver.TCPServer.allow_reuse_address = True
 with socketserver.TCPServer(("0.0.0.0", PORT), Handler) as httpd:
     print(f"Server running at http://0.0.0.0:{PORT}/")
     httpd.serve_forever()
