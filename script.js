@@ -48,14 +48,14 @@ function checkResult() {
   }
 
   currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-  document.getElementById('turn').textContent = currentPlayer;
+  document.getElementById('turn').textContent = "It's "+currentPlayer+"'s turn";
 }
 
 function resetGame() {
   board = ['', '', '', '', '', '', '', '', ''];
   currentPlayer = 'X';
   gameActive = true;
-  document.getElementById('turn').textContent = currentPlayer;
+  document.getElementById('turn').textContent = "It's "+currentPlayer+"'s turn"
   
   for (let i = 0; i < 9; i++) {
     document.getElementById(i).textContent = '';
